@@ -1,0 +1,11 @@
+{
+  "name": "react-marathon",
+  "version": "1.0.0",
+  "description": "a series of prompts for learning react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "okanthony",
+  "license": "ISC"
+}
