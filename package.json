@@ -1,11 +1,19 @@
 {
-  "name": "react-marathon",
-  "version": "1.0.0",
-  "description": "a series of prompts for learning react",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "okanthony",
-  "license": "ISC"
+    "name": "react-marathon",
+    "version": "1.0.0",
+    "description": "a series of prompts for learning react",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel src/assets/index.html --open",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "okanthony",
+    "license": "ISC",
+    "dependencies": {
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.11.0"
+    }
 }
