@@ -1,0 +1,31 @@
+.title-bar {
+    height: 100px;
+}
+
+.progress-meter {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+}
+
+.progress-meter-bar {
+    background-color: #ffeed7;
+    display: flex;
+    height: 10px;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.progress-bullet {
+    background-color: #2ddcdc;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+    position: relative;
+    top: -5px;
+    width: 20px;
+}
