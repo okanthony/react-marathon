@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './admin/App';
+import { AppProvider } from './admin/Context';
 
 ReactDOM.render(
-    <App />,
+    <AppProvider>
+        <App />
+    </AppProvider>,
     document.getElementById('app')
 );
