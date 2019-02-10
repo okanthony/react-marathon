@@ -1,6 +1,7 @@
 import React from 'react';
 
-const { Provider, Consumer } = React.createContext();
+let AppContext;
+const { Provider } = AppContext = React.createContext();
 
 class AppProvider extends React.Component {
     constructor(props) {
@@ -30,4 +31,4 @@ class AppProvider extends React.Component {
     }
 }
 
-export { AppProvider, Consumer as AppConsumer };
+export { AppProvider, AppContext };

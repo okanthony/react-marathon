@@ -1,18 +1,17 @@
 import './styles.css';
-import React from 'react'
+import React, { useContext } from 'react'
 
-import { AppConsumer } from '../Context';
+import { AppContext } from '../Context';
 import { Button } from '../Button';
 
 const Instructions = () => {
+    const { onNextButtonClick } = useContext(AppContext);
+
     return (
-        <AppConsumer>
-            {({ onNextButtonClick }) =>
-            <div className="instructions-bar">
-                Instructions Bar
-                <Button onClick={onNextButtonClick}>Next Page</Button>
-            </div>}
-        </AppConsumer>
+        <div className="instructions-bar">
+            Instructions Bar
+            <Button onClick={onNextButtonClick}>Next Page</Button>
+        </div>
     );
 }
 
