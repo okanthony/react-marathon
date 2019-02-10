@@ -15,3 +15,5 @@ package-lock.json
 # Build artifacts are unique to each developer.
 build
 latest-build
+
+.DS_Store
