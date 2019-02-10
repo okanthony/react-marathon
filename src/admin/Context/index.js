@@ -6,16 +6,22 @@ class AppProvider extends React.Component {
     constructor(props) {
         super(props);
         this.onNextButtonClick = this.onNextButtonClick.bind(this);
+
+        this.state = {
+            currentPage: 1
+        };
     }
 
     onNextButtonClick() {
-        console.log('NEXXXT');
+        this.setState((prevState) => ({
+            currentPage: prevState.currentPage + 1
+        }))
     }
 
     render() {
         return (
             <Provider value={{
-                currentPage: 1,
+                currentPage: this.state.currentPage,
                 onNextButtonClick: this.onNextButtonClick
             }}>
                 {this.props.children}
