@@ -1,6 +1,6 @@
 import './styles.css';
 import React, { useContext } from 'react'
-
+import classNames from '@sindresorhus/class-names';
 import { AppContext } from '../Context';
 
 const numbers = [1, 2, 3, 4, 5];
@@ -15,8 +15,14 @@ const TitleBar = () => {
                 <div className="progress-meter-bar">
                     {
                         numbers.map((number) => {
+                            const classes = classNames(
+                                'progress-bullet',
+                                {
+                                    'progress-bullet-completed': number <= currentPage
+                                }
+                            );
                             return (
-                                <div className="progress-bullet" key={number} />
+                                <div className={classes} key={number} />
                             );
                         })
                     }
