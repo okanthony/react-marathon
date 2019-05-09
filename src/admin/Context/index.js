@@ -4,16 +4,13 @@ let AppContext;
 const { Provider } = AppContext = React.createContext();
 
 class AppProvider extends React.Component {
-    constructor(props) {
-        super(props);
-        this.onNextButtonClick = this.onNextButtonClick.bind(this);
+    state = {
+        currentPage: 1,
+        foo: null,
+        bar: null,
+    };
 
-        this.state = {
-            currentPage: 1
-        };
-    }
-
-    onNextButtonClick() {
+    onNextButtonClick = () => {
         this.setState((prevState) => ({
             currentPage: prevState.currentPage + 1
         }))
