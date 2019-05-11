@@ -4,8 +4,8 @@ import { App } from './admin/App';
 import { AppProvider } from './admin/Context';
 
 ReactDOM.render(
-    <AppProvider>
-        <App />
-    </AppProvider>,
-    document.getElementById('app')
+  <AppProvider>
+    <App />
+  </AppProvider>,
+  document.querySelector('#app')
 );
