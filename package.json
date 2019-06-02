@@ -4,7 +4,7 @@
   "description": "learn how to build react components through a series of interactive challenges",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
+    "dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --mode development\"",
     "lint": "xo --quiet"
   },
   "author": "okanthony",
@@ -28,6 +28,8 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.19.1",
     "prettier": "1.17.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
